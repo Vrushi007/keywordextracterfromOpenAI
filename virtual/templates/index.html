@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <form action="/result" method="post">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Email content</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"
+                placeholder="Enter your email content" name="email_content"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Get keywords</button>
+    </form>
+</div>
+
+{% endblock%}
